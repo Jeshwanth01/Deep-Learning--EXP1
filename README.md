@@ -91,5 +91,6 @@ model.predict(X_n1_1)
 <img width="866" height="282" alt="Screenshot 2025-09-09 090806" src="https://github.com/user-attachments/assets/607715c7-4a76-4d34-8574-1d1a1f980a42" />
 <img width="880" height="111" alt="Screenshot 2025-09-09 090820" src="https://github.com/user-attachments/assets/d7612d9b-ce7d-4544-85d2-7d49b63c4bf7" />
 <img width="862" height="99" alt="Screenshot 2025-09-09 090833" src="https://github.com/user-attachments/assets/01e3e749-896c-434a-87c0-3dff985f10da" />
+
 **RESULT**
 Thus, a neural network regression model was successfully developed and trained using PyTorch.
