@@ -55,7 +55,6 @@ class Model(nn.Module):
 # Initialize the Model, Loss Function, and Optimizer
 
 
-Dataset Information
 <img width="313" height="714" alt="Screenshot 2025-09-09 090714" src="https://github.com/user-attachments/assets/dd1e8df0-26fc-4a44-a9d3-72745d79d023" />
 
 
