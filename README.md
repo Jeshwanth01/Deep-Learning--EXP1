@@ -1,35 +1,33 @@
+# EXPERIMENT 01: DEVELOPING A NEURAL NETWORK REGRESSION MODEL
+## AIM:
+To develop a neural network regression model for the given dataset.
 
-**Developing a Neural Network Regression Model**
+## THEORY:
+Neural network regression models learn complex relationships between input variables and continuous outputs through interconnected layers of neurons. By iteratively adjusting parameters via forward and backpropagation, they minimize prediction errors. Their effectiveness hinges on architecture design, regularization, and hyperparameter tuning to prevent overfitting and optimize performance.
+### Architecture:
+  This neural network architecture comprises two hidden layers with ReLU activation functions, each having 5 and 3 neurons respectively, followed by a linear output layer with 1 neuron. The input shape is a single variable, and the network aims to learn and predict continuous outputs.
 
-**AIM**
-To develop a neural network regression model for the given dataset
-**THEORY**
-Regression problems involve predicting a continuous output variable based on input features. Traditional linear regression models often struggle with complex patterns in data. Neural networks, specifically feedforward neural networks, can capture these complex relationships by using multiple layers of neurons and activation functions. In this experiment, a neural network model is introduced with a single linear layer that learns the parameters weight and bias using gradient descent.
-**Neural Network Model**
-<img width="1071" height="524" alt="Screenshot 2025-09-09 091231" src="https://github.com/user-attachments/assets/48c8c904-d6f1-4ccf-9c34-ac679174b732" />
-**DESIGN STEPS**
-**STEP 1: Generate Dataset**
-Create input values from 1 to 50 and add random noise to introduce variations in output values .
-**STEP 2: Initialize the Neural Network Model**
-Define a simple linear regression model using torch.nn.Linear() and initialize weights and bias values randomly.
-**STEP 3: Define Loss Function and Optimizer**
-Use Mean Squared Error (MSE) as the loss function and optimize using Stochastic Gradient Descent (SGD) with a learning rate of 0.001.
-**STEP 4: Train the Model**
-Run the training process for 100 epochs, compute loss, update weights and bias using backpropagation.
-**STEP 5: Plot the Loss Curve**
-Track the loss function values across epochs to visualize convergence.
-**STEP 6: Visualize the Best-Fit Line**
-Plot the original dataset along with the learned linear model.
-**STEP 7: Make Predictions**
-Use the trained model to predict for a new input value .
-**PROGRAM**
-**Name**:Jeshwanth R
-**Register Number:**2305003003
-class Model(nn.Module):
+## NEURAL NETWORK MODEL:
+<img width="1087" height="576" alt="Screenshot 2025-09-09 093958" src="https://github.com/user-attachments/assets/c992d847-9a33-4548-a500-f5d3e0574cf2" />
 
-    def __init__(self, in_features, out_features):
-       
-        super().__init__()
+## DESIGN STEPS:
+### STEP 1:
+Loading the dataset.
+### STEP 2:
+Split the dataset into training and testing.
+### STEP 3:
+Create MinMaxScalar objects ,fit the model and transform the data.
+### STEP 4:
+Build the Neural Network Model and compile the model.
+### STEP 5:
+Train the model with the training data.
+### STEP 6:
+Plot the performance plot
+### STEP 7:
+Evaluate the model with the testing data.
+## PROGRAM:
+### Name: Rithiga Sri.B
+### Register Number: 212221230083
 ```python
 from google.colab import auth
 import gspread
@@ -83,16 +81,22 @@ X_n1_1=Scaler.transform(X_n1)
 model.predict(X_n1_1)
 
 ```
+## DATASET INFORMATION:
+<img width="342" height="726" alt="Screenshot 2025-09-09 094007" src="https://github.com/user-attachments/assets/6a147f44-616e-4d79-b587-a0a29fca857d" />
 
-# Initialize the Model, Loss Function, and Optimizer
-<img width="313" height="714" alt="Screenshot 2025-09-09 090714" src="https://github.com/user-attachments/assets/dd1e8df0-26fc-4a44-a9d3-72745d79d023" />
-**OUTPUT**
-<img width="927" height="731" alt="Screenshot 2025-09-09 090727" src="https://github.com/user-attachments/assets/9f520474-ff27-4479-924e-1c0945873c10" />
-**New Sample Data Prediction**
-<img width="866" height="282" alt="Screenshot 2025-09-09 090806" src="https://github.com/user-attachments/assets/607715c7-4a76-4d34-8574-1d1a1f980a42" />
-<img width="880" height="111" alt="Screenshot 2025-09-09 090820" src="https://github.com/user-attachments/assets/d7612d9b-ce7d-4544-85d2-7d49b63c4bf7" />
-<img width="862" height="99" alt="Screenshot 2025-09-09 090833" src="https://github.com/user-attachments/assets/01e3e749-896c-434a-87c0-3dff985f10da" />
 
-**RESULT**
+## OUTPUT:
+### Training Loss Vs Iteration Plot:
+<img width="923" height="687" alt="Screenshot 2025-09-09 094015" src="https://github.com/user-attachments/assets/b6e1a083-9e82-437e-82ca-e503a528ad8a" />
 
-Thus, a neural network regression model was successfully developed and trained using PyTorch.
+### Epoch Training:
+<img width="850" height="292" alt="Screenshot 2025-09-09 094020" src="https://github.com/user-attachments/assets/c33a0d7b-4936-4804-8a40-6ebcfbd2f743" />
+### Test Data Root Mean Squared Error:
+<img width="891" height="125" alt="Screenshot 2025-09-09 094025" src="https://github.com/user-attachments/assets/bd4dd8a1-105e-4a25-90fc-92a9ea3ebcf9" />
+
+### New Sample Data Prediction:
+<img width="654" height="93" alt="Screenshot 2025-09-09 094029" src="https://github.com/user-attachments/assets/e8b218e0-d2c8-4966-a48a-70df0a7b601b" />
+
+
+## RESULT:
+Thus a basic neural network regression model for the given dataset is written and executed successfully.
