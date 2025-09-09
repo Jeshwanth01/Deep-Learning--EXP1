@@ -46,8 +46,7 @@ class Model(nn.Module):
     def __init__(self, in_features, out_features):
        
         super().__init__()
-        
-        ```python
+```python
 from google.colab import auth
 import gspread
 from google.auth import default
@@ -100,8 +99,6 @@ X_n1_1=Scaler.transform(X_n1)
 model.predict(X_n1_1)
 
 ```
-
-
 
 # Initialize the Model, Loss Function, and Optimizer
 
